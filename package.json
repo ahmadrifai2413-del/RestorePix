@@ -1,0 +1,16 @@
+{
+  "name": "restorepix-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "node scripts/develop.mjs",
+    "build": "npm run build:browser -w frontend",
+    "build:browser": "npm run build:browser -w frontend",
+    "dev:browser": "npm run dev -w frontend -- --mode browser",
+    "build:api": "npm run build -w frontend"
+  }
+}

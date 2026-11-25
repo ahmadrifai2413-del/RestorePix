@@ -1,0 +1,4 @@
+Python 3.12.14, OpenCV 5.0.0, NumPy 2.3.5, scikit-image 0.26.0.
+Reference: scikit-image coffee RGB, 600 x 400, PNG. Noise seed 2026.
+Reduced-size baseline uses nearest-neighbor expansion before scoring.
+Durations cover the algorithm only and depend on hardware.

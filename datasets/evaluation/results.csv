@@ -1,0 +1,9 @@
+case,stage,tool,parameters,width,height,png_bytes,psnr_db,ssim,seconds
+noise,input,denoise,"{""method"": ""nlm"", ""strength"": 9}",600,400,601730,25.008,0.5086,
+noise,output,denoise,"{""method"": ""nlm"", ""strength"": 9}",600,400,457650,28.543,0.7243,0.3275
+dark,input,light,"{""gamma"": 2.1, ""clip"": 1.2}",600,400,403861,14.693,0.5421,
+dark,output,light,"{""gamma"": 2.1, ""clip"": 1.2}",600,400,489167,23.778,0.8505,0.0033
+contrast,input,color,"{""balance"": 0, ""contrast"": 1.8}",600,400,385692,17.08,0.7469,
+contrast,output,color,"{""balance"": 0, ""contrast"": 1.8}",600,400,457992,43.481,0.9928,0.0112
+small,input,upscale,"{""scale"": 2, ""method"": ""lanczos""}",300,200,118405,28.112,0.8701,
+small,output,upscale,"{""scale"": 2, ""method"": ""lanczos""}",600,400,391986,29.648,0.8914,0.0018
