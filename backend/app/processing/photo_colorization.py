@@ -72,6 +72,7 @@ def _stages():
                 raise ValueError("File model pewarnaan rusak. Ekstrak kembali paket tambahan.")
         ranges = _weight_ranges()
         definition = (MODEL_DIR / FILES[0]).read_text()
+        definition = re.sub(r"#[^\n]*", "", definition)
         blocks = re.split(r"(?m)(?=^layer\s*\{)", definition)[1:]
         stages = []
         layers, weights = [], []
